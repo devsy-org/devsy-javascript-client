@@ -17,7 +17,7 @@ import { V1ObjectMeta } from '../models/V1ObjectMeta';
 
 
 /**
-* ClusterAgentConfig holds the loft agent configuration
+* ClusterAgentConfig holds the devsy agent configuration
 */
 export class ManagementV1ClusterAgentConfig {
     'analyticsSpec': ManagementV1AgentAnalyticsSpec;
@@ -44,20 +44,20 @@ export class ManagementV1ClusterAgentConfig {
     */
     'kind'?: string;
     /**
-    * LoftHost defines the host for the agent\'s loft instance
+    * DevsyHost defines the host for the agent\'s devsy instance
     */
-    'loftHost'?: string;
+    'devsyHost'?: string;
     /**
-    * LoftInstanceID defines the instance id from the loft instance
+    * DevsyInstanceID defines the instance id from the devsy instance
     */
-    'loftInstanceID'?: string;
+    'devsyInstanceID'?: string;
     'metadata'?: V1ObjectMeta;
     /**
-    * ProjectNamespacePrefix holds the prefix for loft project namespaces
+    * ProjectNamespacePrefix holds the prefix for devsy project namespaces
     */
     'projectNamespacePrefix'?: string;
     /**
-    * TokenCaCert is the certificate authority the Loft tokens will be signed with
+    * TokenCaCert is the certificate authority the Devsy tokens will be signed with
     */
     'tokenCaCert'?: string;
 
@@ -113,14 +113,14 @@ export class ManagementV1ClusterAgentConfig {
             "format": ""
         },
         {
-            "name": "loftHost",
-            "baseName": "loftHost",
+            "name": "devsyHost",
+            "baseName": "devsyHost",
             "type": "string",
             "format": ""
         },
         {
-            "name": "loftInstanceID",
-            "baseName": "loftInstanceID",
+            "name": "devsyInstanceID",
+            "baseName": "devsyInstanceID",
             "type": "string",
             "format": ""
         },

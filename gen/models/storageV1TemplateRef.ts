@@ -22,7 +22,7 @@ export class StorageV1TemplateRef {
     */
     'syncOnce'?: boolean;
     /**
-    * Version holds the template version to use. Version is expected to be in semantic versioning format. Alternatively, you can also exchange major, minor or patch with an \'x\' to tell Loft to automatically select the latest major, minor or patch version.
+    * Version holds the template version to use. Version is expected to be in semantic versioning format. Alternatively, you can also exchange major, minor or patch with an \'x\' to tell Devsy to automatically select the latest major, minor or patch version.
     */
     'version'?: string;
 

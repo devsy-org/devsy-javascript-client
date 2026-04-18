@@ -30,7 +30,7 @@ export class ManagementV1Authentication {
     */
     'accessKeyMaxTTLSeconds'?: number;
     /**
-    * Connectors are optional additional connectors for Loft.
+    * Connectors are optional additional connectors for Devsy.
     */
     'connectors'?: Array<ManagementV1ConnectorWithName>;
     /**

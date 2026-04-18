@@ -14,7 +14,7 @@ import { ManagementV1AuditPolicy } from '../models/managementV1AuditPolicy';
 
 
 /**
-* Audit holds the audit configuration options for loft. Changing any options will require a loft restart to take effect.
+* Audit holds the audit configuration options for devsy. Changing any options will require a devsy restart to take effect.
 */
 export class ManagementV1Audit {
     /**
@@ -30,7 +30,7 @@ export class ManagementV1Audit {
     */
     'dataStoreTTL'?: number;
     /**
-    * If true, the agent will not send back any audit logs to Loft itself.
+    * If true, the agent will not send back any audit logs to Devsy itself.
     */
     'disableAgentSyncBack'?: boolean;
     /**

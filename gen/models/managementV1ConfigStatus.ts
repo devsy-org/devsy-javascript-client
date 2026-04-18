@@ -36,22 +36,22 @@ export class ManagementV1ConfigStatus {
     'cloud'?: ManagementV1Cloud;
     'costControl'?: ManagementV1CostControl;
     /**
-    * DevPodSubDomain holds a subdomain in the following form *.workspace.my-domain.com
+    * DevsySubDomain holds a subdomain in the following form *.workspace.my-domain.com
     */
-    'devPodSubDomain'?: string;
+    'devsySubDomain'?: string;
     /**
-    * DisableLoftConfigEndpoint will disable setting config via the UI and config.management.loft.sh endpoint
+    * DisableDevsyConfigEndpoint will disable setting config via the UI and config.management.devsy.sh endpoint
     */
     'disableConfigEndpoint'?: boolean;
     'imageBuilder'?: ManagementV1ImageBuilder;
     /**
-    * LoftHost holds the domain where the loft instance is hosted. This should not include https or http. E.g. loft.my-domain.com
+    * DevsyHost holds the domain where the devsy instance is hosted. This should not include https or http. E.g. devsy.my-domain.com
     */
-    'loftHost'?: string;
+    'devsyHost'?: string;
     'oidc'?: ManagementV1OIDC;
     'platformDB'?: ManagementV1PlatformDB;
     /**
-    * ProjectNamespacePrefix holds the prefix for loft project namespaces. Omitted defaults to \"p-\"
+    * ProjectNamespacePrefix holds the prefix for devsy project namespaces. Omitted defaults to \"p-\"
     */
     'projectNamespacePrefix'?: string;
     'uiSettings'?: UiV1UISettingsConfig;
@@ -97,8 +97,8 @@ export class ManagementV1ConfigStatus {
             "format": ""
         },
         {
-            "name": "devPodSubDomain",
-            "baseName": "devPodSubDomain",
+            "name": "devsySubDomain",
+            "baseName": "devsySubDomain",
             "type": "string",
             "format": ""
         },
@@ -115,8 +115,8 @@ export class ManagementV1ConfigStatus {
             "format": ""
         },
         {
-            "name": "loftHost",
-            "baseName": "loftHost",
+            "name": "devsyHost",
+            "baseName": "devsyHost",
             "type": "string",
             "format": ""
         },

@@ -20,7 +20,7 @@ import { LicenseApiPlan } from '../models/licenseApiPlan';
 
 
 /**
-* License is a struct representing the license data sent to a Loft instance after checking in with the license server.
+* License is a struct representing the license data sent to a Devsy instance after checking in with the license server.
 */
 export class LicenseApiLicense {
     'analytics'?: LicenseApiAnalytics;
@@ -33,11 +33,11 @@ export class LicenseApiLicense {
     */
     'block'?: Array<LicenseApiBlockRequest>;
     /**
-    * Buttons is a slice of license server endpoints (buttons) that the Loft instance may need to hit. Each Button contains the display text and link for the front end to work with.
+    * Buttons is a slice of license server endpoints (buttons) that the Devsy instance may need to hit. Each Button contains the display text and link for the front end to work with.
     */
     'buttons'?: Array<LicenseApiButton>;
     /**
-    * DomainToken holds the JWT with the URL that the Loft instance is publicly available on. (via Loft router)
+    * DomainToken holds the JWT with the URL that the Devsy instance is publicly available on. (via Devsy router)
     */
     'domainToken'?: string;
     /**
@@ -45,7 +45,7 @@ export class LicenseApiLicense {
     */
     'entity'?: string;
     /**
-    * InstanceID contains the instance id of the Loft instance
+    * InstanceID contains the instance id of the Devsy instance
     */
     'instance'?: string;
     /**

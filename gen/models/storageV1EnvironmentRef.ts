@@ -14,11 +14,11 @@
 
 export class StorageV1EnvironmentRef {
     /**
-    * Name is the name of DevPodEnvironmentTemplate this references
+    * Name is the name of DevsyEnvironmentTemplate this references
     */
     'name': string;
     /**
-    * Version is the version of DevPodEnvironmentTemplate this references
+    * Version is the version of DevsyEnvironmentTemplate this references
     */
     'version'?: string;
 

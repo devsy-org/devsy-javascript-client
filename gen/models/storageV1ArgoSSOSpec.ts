@@ -14,15 +14,15 @@
 
 export class StorageV1ArgoSSOSpec {
     /**
-    * AssignedRoles is a list of roles to assign for users who authenticate via Loft -- by default this will be the `read-only` role. If any roles are provided this will override the default setting.
+    * AssignedRoles is a list of roles to assign for users who authenticate via Devsy -- by default this will be the `read-only` role. If any roles are provided this will override the default setting.
     */
     'assignedRoles'?: Array<string>;
     /**
-    * Enabled indicates if the ArgoCD SSO Integration is enabled for this project. Enabling this will cause Loft to configure SSO authentication via Loft in ArgoCD. If Projects are *not* enabled, all users associated with this Project will be assigned either the \'read-only\' (default) role, *or* the roles set under the AssignedRoles field.
+    * Enabled indicates if the ArgoCD SSO Integration is enabled for this project. Enabling this will cause Devsy to configure SSO authentication via Devsy in ArgoCD. If Projects are *not* enabled, all users associated with this Project will be assigned either the \'read-only\' (default) role, *or* the roles set under the AssignedRoles field.
     */
     'enabled'?: boolean;
     /**
-    * Host defines the ArgoCD host address that will be used for OIDC authentication between loft and ArgoCD. If not specified OIDC integration will be skipped, but vclusters/spaces will still be synced to ArgoCD.
+    * Host defines the ArgoCD host address that will be used for OIDC authentication between devsy and ArgoCD. If not specified OIDC integration will be skipped, but vclusters/spaces will still be synced to ArgoCD.
     */
     'host'?: string;
 

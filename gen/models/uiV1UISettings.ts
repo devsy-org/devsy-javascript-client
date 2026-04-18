@@ -16,7 +16,7 @@ import { V1ObjectMeta } from '../models/V1ObjectMeta';
 
 
 /**
-* UISettings holds the loft ui configuration settings
+* UISettings holds the devsy ui configuration settings
 */
 export class UiV1UISettings {
     /**

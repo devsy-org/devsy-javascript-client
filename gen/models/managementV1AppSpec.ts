@@ -76,7 +76,7 @@ export class ManagementV1AppSpec {
     */
     'versions'?: Array<StorageV1AppVersion>;
     /**
-    * Wait determines if Loft should wait during deploy for the app to become ready
+    * Wait determines if Devsy should wait during deploy for the app to become ready
     */
     'wait'?: boolean;
 

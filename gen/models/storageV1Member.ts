@@ -18,7 +18,7 @@ export class StorageV1Member {
     */
     'clusterRole': string;
     /**
-    * Group of the member. Currently only supports storage.loft.sh
+    * Group of the member. Currently only supports storage.devsy.sh
     */
     'group'?: string;
     /**

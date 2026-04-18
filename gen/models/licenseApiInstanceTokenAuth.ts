@@ -18,7 +18,7 @@ export class LicenseApiInstanceTokenAuth {
     */
     'certificate': string;
     /**
-    * Token is the jwt token identifying the loft instance.
+    * Token is the jwt token identifying the devsy instance.
     */
     'token': string;
 

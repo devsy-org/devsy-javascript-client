@@ -30,7 +30,7 @@ export class ManagementV1AuthenticationSAML {
     */
     'emailAttr'?: string;
     /**
-    * When provided Loft will include this as the Issuer value during AuthnRequest. It will also override the redirectURI as the required audience when evaluating AudienceRestriction elements in the response.
+    * When provided Devsy will include this as the Issuer value during AuthnRequest. It will also override the redirectURI as the required audience when evaluating AudienceRestriction elements in the response.
     */
     'entityIssuer'?: string;
     /**
@@ -54,7 +54,7 @@ export class ManagementV1AuthenticationSAML {
     */
     'nameIDPolicyFormat'?: string;
     /**
-    * If the response assertion status value contains a Destination element, it must match this value exactly. Usually looks like https://your-loft-domain/auth/saml/callback
+    * If the response assertion status value contains a Destination element, it must match this value exactly. Usually looks like https://your-devsy-domain/auth/saml/callback
     */
     'redirectURI'?: string;
     /**

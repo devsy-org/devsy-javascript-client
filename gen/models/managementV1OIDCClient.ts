@@ -15,7 +15,7 @@ import { V1ObjectMeta } from '../models/V1ObjectMeta';
 
 
 /**
-* OIDCClient represents an OIDC client to use with Loft as an OIDC provider
+* OIDCClient represents an OIDC client to use with Devsy as an OIDC provider
 */
 export class ManagementV1OIDCClient {
     /**

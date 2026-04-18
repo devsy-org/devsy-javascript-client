@@ -19,7 +19,7 @@ import { StorageV1HelmChartRepository } from '../models/storageV1HelmChartReposi
 */
 export class ManagementV1Apps {
     /**
-    * If this option is true, loft will not try to parse the default apps
+    * If this option is true, devsy will not try to parse the default apps
     */
     'noDefault'?: boolean;
     /**
@@ -27,7 +27,7 @@ export class ManagementV1Apps {
     */
     'predefinedApps'?: Array<ManagementV1PredefinedApp>;
     /**
-    * These are additional repositories that are parsed by loft
+    * These are additional repositories that are parsed by devsy
     */
     'repositories'?: Array<StorageV1HelmChartRepository>;
 

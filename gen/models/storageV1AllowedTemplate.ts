@@ -14,7 +14,7 @@
 
 export class StorageV1AllowedTemplate {
     /**
-    * Group of the template that is allowed. Currently only supports storage.loft.sh
+    * Group of the template that is allowed. Currently only supports storage.devsy.sh
     */
     'group'?: string;
     /**
@@ -22,7 +22,7 @@ export class StorageV1AllowedTemplate {
     */
     'isDefault'?: boolean;
     /**
-    * Kind of the template that is allowed. Currently only supports DevPodWorkspaceTemplate, VirtualClusterTemplate & SpaceTemplate
+    * Kind of the template that is allowed. Currently only supports DevsyWorkspaceTemplate, VirtualClusterTemplate & SpaceTemplate
     */
     'kind'?: string;
     /**

@@ -18,15 +18,15 @@ import { ManagementV1OIDCClientSpec } from '../models/managementV1OIDCClientSpec
 */
 export class ManagementV1OIDC {
     /**
-    * The clients that are allowed to request loft tokens
+    * The clients that are allowed to request devsy tokens
     */
     'clients'?: Array<ManagementV1OIDCClientSpec>;
     /**
-    * If true indicates that loft will act as an OIDC server
+    * If true indicates that devsy will act as an OIDC server
     */
     'enabled'?: boolean;
     /**
-    * If true indicates that loft will allow wildcard \'*\' in client redirectURIs
+    * If true indicates that devsy will allow wildcard \'*\' in client redirectURIs
     */
     'wildcardRedirect'?: boolean;
 

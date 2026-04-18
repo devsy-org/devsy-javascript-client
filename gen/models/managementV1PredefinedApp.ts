@@ -29,7 +29,7 @@ export class ManagementV1PredefinedApp {
     */
     'iconUrl'?: string;
     /**
-    * InitialValues holds the initial values for this app. The values will be prefilled automatically. There are certain placeholders that can be used within the values that are replaced by the loft UI automatically.
+    * InitialValues holds the initial values for this app. The values will be prefilled automatically. There are certain placeholders that can be used within the values that are replaced by the devsy UI automatically.
     */
     'initialValues'?: string;
     /**

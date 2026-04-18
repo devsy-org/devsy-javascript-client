@@ -19,17 +19,17 @@ import {ManagementV1Cluster} from "./models/managementV1Cluster"
 import {ManagementV1Config} from "./models/managementV1Config"
 import {ManagementV1ConvertVirtualClusterConfig} from "./models/managementV1ConvertVirtualClusterConfig"
 import {ManagementV1DatabaseConnector} from "./models/managementV1DatabaseConnector"
-import {ManagementV1DevPodEnvironmentTemplate} from "./models/managementV1DevPodEnvironmentTemplate"
-import {ManagementV1DevPodWorkspaceInstanceCancel} from "./models/managementV1DevPodWorkspaceInstanceCancel"
-import {ManagementV1DevPodWorkspaceInstanceDownload} from "./models/managementV1DevPodWorkspaceInstanceDownload"
-import {ManagementV1DevPodWorkspaceInstanceLog} from "./models/managementV1DevPodWorkspaceInstanceLog"
-import {ManagementV1DevPodWorkspaceInstanceStop} from "./models/managementV1DevPodWorkspaceInstanceStop"
-import {ManagementV1DevPodWorkspaceInstanceTasks} from "./models/managementV1DevPodWorkspaceInstanceTasks"
-import {ManagementV1DevPodWorkspaceInstanceTroubleshoot} from "./models/managementV1DevPodWorkspaceInstanceTroubleshoot"
-import {ManagementV1DevPodWorkspaceInstanceUp} from "./models/managementV1DevPodWorkspaceInstanceUp"
-import {ManagementV1DevPodWorkspaceInstance} from "./models/managementV1DevPodWorkspaceInstance"
-import {ManagementV1DevPodWorkspacePreset} from "./models/managementV1DevPodWorkspacePreset"
-import {ManagementV1DevPodWorkspaceTemplate} from "./models/managementV1DevPodWorkspaceTemplate"
+import {ManagementV1DevsyEnvironmentTemplate} from "./models/managementV1DevsyEnvironmentTemplate"
+import {ManagementV1DevsyWorkspaceInstanceCancel} from "./models/managementV1DevsyWorkspaceInstanceCancel"
+import {ManagementV1DevsyWorkspaceInstanceDownload} from "./models/managementV1DevsyWorkspaceInstanceDownload"
+import {ManagementV1DevsyWorkspaceInstanceLog} from "./models/managementV1DevsyWorkspaceInstanceLog"
+import {ManagementV1DevsyWorkspaceInstanceStop} from "./models/managementV1DevsyWorkspaceInstanceStop"
+import {ManagementV1DevsyWorkspaceInstanceTasks} from "./models/managementV1DevsyWorkspaceInstanceTasks"
+import {ManagementV1DevsyWorkspaceInstanceTroubleshoot} from "./models/managementV1DevsyWorkspaceInstanceTroubleshoot"
+import {ManagementV1DevsyWorkspaceInstanceUp} from "./models/managementV1DevsyWorkspaceInstanceUp"
+import {ManagementV1DevsyWorkspaceInstance} from "./models/managementV1DevsyWorkspaceInstance"
+import {ManagementV1DevsyWorkspacePreset} from "./models/managementV1DevsyWorkspacePreset"
+import {ManagementV1DevsyWorkspaceTemplate} from "./models/managementV1DevsyWorkspaceTemplate"
 import {ManagementV1DirectClusterEndpointToken} from "./models/managementV1DirectClusterEndpointToken"
 import {ManagementV1Event} from "./models/managementV1Event"
 import {ManagementV1Feature} from "./models/managementV1Feature"
@@ -38,7 +38,7 @@ import {ManagementV1Kiosk} from "./models/managementV1Kiosk"
 import {ManagementV1LicenseRequest} from "./models/managementV1LicenseRequest"
 import {ManagementV1LicenseToken} from "./models/managementV1LicenseToken"
 import {ManagementV1License} from "./models/managementV1License"
-import {ManagementV1LoftUpgrade} from "./models/managementV1LoftUpgrade"
+import {ManagementV1DevsyUpgrade} from "./models/managementV1DevsyUpgrade"
 import {ManagementV1NodeClaim} from "./models/managementV1NodeClaim"
 import {ManagementV1NodeEnvironment} from "./models/managementV1NodeEnvironment"
 import {ManagementV1NodeProviderExec} from "./models/managementV1NodeProviderExec"
@@ -112,17 +112,17 @@ export type TGenResources = {
   ManagementV1Config: GroupVersionResource<ManagementV1Config>
   ManagementV1ConvertVirtualClusterConfig: GroupVersionResource<ManagementV1ConvertVirtualClusterConfig>
   ManagementV1DatabaseConnector: GroupVersionResource<ManagementV1DatabaseConnector>
-  ManagementV1DevPodEnvironmentTemplate: GroupVersionResource<ManagementV1DevPodEnvironmentTemplate>
-  ManagementV1DevPodWorkspaceInstance: GroupVersionResource<ManagementV1DevPodWorkspaceInstance>
-  ManagementV1DevPodWorkspaceInstanceCancel: GroupVersionResource<ManagementV1DevPodWorkspaceInstanceCancel>
-  ManagementV1DevPodWorkspaceInstanceDownload: GroupVersionResource<ManagementV1DevPodWorkspaceInstanceDownload>
-  ManagementV1DevPodWorkspaceInstanceLog: GroupVersionResource<ManagementV1DevPodWorkspaceInstanceLog>
-  ManagementV1DevPodWorkspaceInstanceStop: GroupVersionResource<ManagementV1DevPodWorkspaceInstanceStop>
-  ManagementV1DevPodWorkspaceInstanceTasks: GroupVersionResource<ManagementV1DevPodWorkspaceInstanceTasks>
-  ManagementV1DevPodWorkspaceInstanceTroubleshoot: GroupVersionResource<ManagementV1DevPodWorkspaceInstanceTroubleshoot>
-  ManagementV1DevPodWorkspaceInstanceUp: GroupVersionResource<ManagementV1DevPodWorkspaceInstanceUp>
-  ManagementV1DevPodWorkspacePreset: GroupVersionResource<ManagementV1DevPodWorkspacePreset>
-  ManagementV1DevPodWorkspaceTemplate: GroupVersionResource<ManagementV1DevPodWorkspaceTemplate>
+  ManagementV1DevsyEnvironmentTemplate: GroupVersionResource<ManagementV1DevsyEnvironmentTemplate>
+  ManagementV1DevsyWorkspaceInstance: GroupVersionResource<ManagementV1DevsyWorkspaceInstance>
+  ManagementV1DevsyWorkspaceInstanceCancel: GroupVersionResource<ManagementV1DevsyWorkspaceInstanceCancel>
+  ManagementV1DevsyWorkspaceInstanceDownload: GroupVersionResource<ManagementV1DevsyWorkspaceInstanceDownload>
+  ManagementV1DevsyWorkspaceInstanceLog: GroupVersionResource<ManagementV1DevsyWorkspaceInstanceLog>
+  ManagementV1DevsyWorkspaceInstanceStop: GroupVersionResource<ManagementV1DevsyWorkspaceInstanceStop>
+  ManagementV1DevsyWorkspaceInstanceTasks: GroupVersionResource<ManagementV1DevsyWorkspaceInstanceTasks>
+  ManagementV1DevsyWorkspaceInstanceTroubleshoot: GroupVersionResource<ManagementV1DevsyWorkspaceInstanceTroubleshoot>
+  ManagementV1DevsyWorkspaceInstanceUp: GroupVersionResource<ManagementV1DevsyWorkspaceInstanceUp>
+  ManagementV1DevsyWorkspacePreset: GroupVersionResource<ManagementV1DevsyWorkspacePreset>
+  ManagementV1DevsyWorkspaceTemplate: GroupVersionResource<ManagementV1DevsyWorkspaceTemplate>
   ManagementV1DirectClusterEndpointToken: GroupVersionResource<ManagementV1DirectClusterEndpointToken>
   ManagementV1Event: GroupVersionResource<ManagementV1Event>
   ManagementV1Feature: GroupVersionResource<ManagementV1Feature>
@@ -131,7 +131,7 @@ export type TGenResources = {
   ManagementV1License: GroupVersionResource<ManagementV1License>
   ManagementV1LicenseRequest: GroupVersionResource<ManagementV1LicenseRequest>
   ManagementV1LicenseToken: GroupVersionResource<ManagementV1LicenseToken>
-  ManagementV1LoftUpgrade: GroupVersionResource<ManagementV1LoftUpgrade>
+  ManagementV1DevsyUpgrade: GroupVersionResource<ManagementV1DevsyUpgrade>
   ManagementV1NodeClaim: GroupVersionResource<ManagementV1NodeClaim>
   ManagementV1NodeEnvironment: GroupVersionResource<ManagementV1NodeEnvironment>
   ManagementV1NodeProvider: GroupVersionResource<ManagementV1NodeProvider>
@@ -188,7 +188,7 @@ export type TGenResources = {
 
 export const GenResources: TGenResources = {
   ManagementV1AgentAuditEvent: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "agentauditevents",
     subResource: "",
@@ -196,7 +196,7 @@ export const GenResources: TGenResources = {
     kind: "AgentAuditEvent",
   },
   ManagementV1Announcement: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "announcements",
     subResource: "",
@@ -204,7 +204,7 @@ export const GenResources: TGenResources = {
     kind: "Announcement",
   },
   ManagementV1App: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "apps",
     subResource: "",
@@ -212,7 +212,7 @@ export const GenResources: TGenResources = {
     kind: "App",
   },
   ManagementV1AppCredentials: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "apps",
     subResource: "credentials",
@@ -220,7 +220,7 @@ export const GenResources: TGenResources = {
     kind: "AppCredentials",
   },
   ManagementV1Backup: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "backups",
     subResource: "",
@@ -228,7 +228,7 @@ export const GenResources: TGenResources = {
     kind: "Backup",
   },
   ManagementV1BackupApply: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "backups",
     subResource: "apply",
@@ -236,7 +236,7 @@ export const GenResources: TGenResources = {
     kind: "BackupApply",
   },
   ManagementV1Cluster: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusters",
     subResource: "",
@@ -244,7 +244,7 @@ export const GenResources: TGenResources = {
     kind: "Cluster",
   },
   ManagementV1ClusterAccess: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusteraccesses",
     subResource: "",
@@ -252,7 +252,7 @@ export const GenResources: TGenResources = {
     kind: "ClusterAccess",
   },
   ManagementV1ClusterAccessKey: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusters",
     subResource: "accesskey",
@@ -260,7 +260,7 @@ export const GenResources: TGenResources = {
     kind: "ClusterAccessKey",
   },
   ManagementV1ClusterAgentConfig: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusters",
     subResource: "agentconfig",
@@ -268,7 +268,7 @@ export const GenResources: TGenResources = {
     kind: "ClusterAgentConfig",
   },
   ManagementV1ClusterCharts: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusters",
     subResource: "charts",
@@ -276,7 +276,7 @@ export const GenResources: TGenResources = {
     kind: "ClusterCharts",
   },
   ManagementV1ClusterDomain: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusters",
     subResource: "domain",
@@ -284,7 +284,7 @@ export const GenResources: TGenResources = {
     kind: "ClusterDomain",
   },
   ManagementV1ClusterMemberAccess: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusters",
     subResource: "memberaccess",
@@ -292,7 +292,7 @@ export const GenResources: TGenResources = {
     kind: "ClusterMemberAccess",
   },
   ManagementV1ClusterMembers: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusters",
     subResource: "members",
@@ -300,7 +300,7 @@ export const GenResources: TGenResources = {
     kind: "ClusterMembers",
   },
   ManagementV1ClusterReset: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusters",
     subResource: "reset",
@@ -308,7 +308,7 @@ export const GenResources: TGenResources = {
     kind: "ClusterReset",
   },
   ManagementV1ClusterRoleTemplate: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "clusterroletemplates",
     subResource: "",
@@ -316,7 +316,7 @@ export const GenResources: TGenResources = {
     kind: "ClusterRoleTemplate",
   },
   ManagementV1Config: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "configs",
     subResource: "",
@@ -324,7 +324,7 @@ export const GenResources: TGenResources = {
     kind: "Config",
   },
   ManagementV1ConvertVirtualClusterConfig: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "convertvirtualclusterconfig",
     subResource: "",
@@ -332,103 +332,103 @@ export const GenResources: TGenResources = {
     kind: "ConvertVirtualClusterConfig",
   },
   ManagementV1DatabaseConnector: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "databaseconnectors",
     subResource: "",
     namespaced: false,
     kind: "DatabaseConnector",
   },
-  ManagementV1DevPodEnvironmentTemplate: {
-    group: "management.loft.sh",
+  ManagementV1DevsyEnvironmentTemplate: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodenvironmenttemplates",
+    resource: "devsyenvironmenttemplates",
     subResource: "",
     namespaced: false,
-    kind: "DevPodEnvironmentTemplate",
+    kind: "DevsyEnvironmentTemplate",
   },
-  ManagementV1DevPodWorkspaceInstance: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspaceInstance: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspaceinstances",
+    resource: "devsyworkspaceinstances",
     subResource: "",
     namespaced: true,
-    kind: "DevPodWorkspaceInstance",
+    kind: "DevsyWorkspaceInstance",
   },
-  ManagementV1DevPodWorkspaceInstanceCancel: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspaceInstanceCancel: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspaceinstances",
+    resource: "devsyworkspaceinstances",
     subResource: "cancel",
     namespaced: true,
-    kind: "DevPodWorkspaceInstanceCancel",
+    kind: "DevsyWorkspaceInstanceCancel",
   },
-  ManagementV1DevPodWorkspaceInstanceDownload: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspaceInstanceDownload: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspaceinstances",
+    resource: "devsyworkspaceinstances",
     subResource: "download",
     namespaced: true,
-    kind: "DevPodWorkspaceInstanceDownload",
+    kind: "DevsyWorkspaceInstanceDownload",
   },
-  ManagementV1DevPodWorkspaceInstanceLog: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspaceInstanceLog: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspaceinstances",
+    resource: "devsyworkspaceinstances",
     subResource: "log",
     namespaced: true,
-    kind: "DevPodWorkspaceInstanceLog",
+    kind: "DevsyWorkspaceInstanceLog",
   },
-  ManagementV1DevPodWorkspaceInstanceStop: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspaceInstanceStop: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspaceinstances",
+    resource: "devsyworkspaceinstances",
     subResource: "stop",
     namespaced: true,
-    kind: "DevPodWorkspaceInstanceStop",
+    kind: "DevsyWorkspaceInstanceStop",
   },
-  ManagementV1DevPodWorkspaceInstanceTasks: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspaceInstanceTasks: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspaceinstances",
+    resource: "devsyworkspaceinstances",
     subResource: "tasks",
     namespaced: true,
-    kind: "DevPodWorkspaceInstanceTasks",
+    kind: "DevsyWorkspaceInstanceTasks",
   },
-  ManagementV1DevPodWorkspaceInstanceTroubleshoot: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspaceInstanceTroubleshoot: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspaceinstances",
+    resource: "devsyworkspaceinstances",
     subResource: "troubleshoot",
     namespaced: true,
-    kind: "DevPodWorkspaceInstanceTroubleshoot",
+    kind: "DevsyWorkspaceInstanceTroubleshoot",
   },
-  ManagementV1DevPodWorkspaceInstanceUp: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspaceInstanceUp: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspaceinstances",
+    resource: "devsyworkspaceinstances",
     subResource: "up",
     namespaced: true,
-    kind: "DevPodWorkspaceInstanceUp",
+    kind: "DevsyWorkspaceInstanceUp",
   },
-  ManagementV1DevPodWorkspacePreset: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspacePreset: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspacepresets",
+    resource: "devsyworkspacepresets",
     subResource: "",
     namespaced: false,
-    kind: "DevPodWorkspacePreset",
+    kind: "DevsyWorkspacePreset",
   },
-  ManagementV1DevPodWorkspaceTemplate: {
-    group: "management.loft.sh",
+  ManagementV1DevsyWorkspaceTemplate: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "devpodworkspacetemplates",
+    resource: "devsyworkspacetemplates",
     subResource: "",
     namespaced: false,
-    kind: "DevPodWorkspaceTemplate",
+    kind: "DevsyWorkspaceTemplate",
   },
   ManagementV1DirectClusterEndpointToken: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "directclusterendpointtokens",
     subResource: "",
@@ -436,7 +436,7 @@ export const GenResources: TGenResources = {
     kind: "DirectClusterEndpointToken",
   },
   ManagementV1Event: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "events",
     subResource: "",
@@ -444,7 +444,7 @@ export const GenResources: TGenResources = {
     kind: "Event",
   },
   ManagementV1Feature: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "features",
     subResource: "",
@@ -452,7 +452,7 @@ export const GenResources: TGenResources = {
     kind: "Feature",
   },
   ManagementV1IngressAuthToken: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "ingressauthtokens",
     subResource: "",
@@ -460,7 +460,7 @@ export const GenResources: TGenResources = {
     kind: "IngressAuthToken",
   },
   ManagementV1Kiosk: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "kiosk",
     subResource: "",
@@ -468,7 +468,7 @@ export const GenResources: TGenResources = {
     kind: "Kiosk",
   },
   ManagementV1License: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "licenses",
     subResource: "",
@@ -476,7 +476,7 @@ export const GenResources: TGenResources = {
     kind: "License",
   },
   ManagementV1LicenseRequest: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "licenses",
     subResource: "request",
@@ -484,23 +484,23 @@ export const GenResources: TGenResources = {
     kind: "LicenseRequest",
   },
   ManagementV1LicenseToken: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "licensetokens",
     subResource: "",
     namespaced: false,
     kind: "LicenseToken",
   },
-  ManagementV1LoftUpgrade: {
-    group: "management.loft.sh",
+  ManagementV1DevsyUpgrade: {
+    group: "management.devsy.sh",
     version: "v1",
-    resource: "loftupgrades",
+    resource: "devsyupgrades",
     subResource: "",
     namespaced: false,
-    kind: "LoftUpgrade",
+    kind: "DevsyUpgrade",
   },
   ManagementV1NodeClaim: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "nodeclaims",
     subResource: "",
@@ -508,7 +508,7 @@ export const GenResources: TGenResources = {
     kind: "NodeClaim",
   },
   ManagementV1NodeEnvironment: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "nodeenvironments",
     subResource: "",
@@ -516,7 +516,7 @@ export const GenResources: TGenResources = {
     kind: "NodeEnvironment",
   },
   ManagementV1NodeProvider: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "nodeproviders",
     subResource: "",
@@ -524,7 +524,7 @@ export const GenResources: TGenResources = {
     kind: "NodeProvider",
   },
   ManagementV1NodeProviderExec: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "nodeproviders",
     subResource: "exec",
@@ -532,7 +532,7 @@ export const GenResources: TGenResources = {
     kind: "NodeProviderExec",
   },
   ManagementV1NodeType: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "nodetypes",
     subResource: "",
@@ -540,7 +540,7 @@ export const GenResources: TGenResources = {
     kind: "NodeType",
   },
   ManagementV1OIDCClient: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "oidcclients",
     subResource: "",
@@ -548,7 +548,7 @@ export const GenResources: TGenResources = {
     kind: "OIDCClient",
   },
   ManagementV1OwnedAccessKey: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "ownedaccesskeys",
     subResource: "",
@@ -556,7 +556,7 @@ export const GenResources: TGenResources = {
     kind: "OwnedAccessKey",
   },
   ManagementV1Project: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "",
@@ -564,7 +564,7 @@ export const GenResources: TGenResources = {
     kind: "Project",
   },
   ManagementV1ProjectChartInfo: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "chartinfo",
@@ -572,7 +572,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectChartInfo",
   },
   ManagementV1ProjectCharts: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "charts",
@@ -580,7 +580,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectCharts",
   },
   ManagementV1ProjectClusters: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "clusters",
@@ -588,7 +588,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectClusters",
   },
   ManagementV1ProjectImportSpace: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "importspace",
@@ -596,7 +596,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectImportSpace",
   },
   ManagementV1ProjectMembers: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "members",
@@ -604,7 +604,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectMembers",
   },
   ManagementV1ProjectMigrateSpaceInstance: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "migratespaceinstance",
@@ -612,7 +612,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectMigrateSpaceInstance",
   },
   ManagementV1ProjectMigrateVirtualClusterInstance: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "migratevirtualclusterinstance",
@@ -620,7 +620,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectMigrateVirtualClusterInstance",
   },
   ManagementV1ProjectNodeTypes: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "nodetypes",
@@ -628,7 +628,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectNodeTypes",
   },
   ManagementV1ProjectSecret: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projectsecrets",
     subResource: "",
@@ -636,7 +636,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectSecret",
   },
   ManagementV1ProjectTemplates: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "projects",
     subResource: "templates",
@@ -644,7 +644,7 @@ export const GenResources: TGenResources = {
     kind: "ProjectTemplates",
   },
   ManagementV1RedirectToken: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "redirecttokens",
     subResource: "",
@@ -652,7 +652,7 @@ export const GenResources: TGenResources = {
     kind: "RedirectToken",
   },
   ManagementV1RegisterVirtualCluster: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "registervirtualclusters",
     subResource: "",
@@ -660,7 +660,7 @@ export const GenResources: TGenResources = {
     kind: "RegisterVirtualCluster",
   },
   ManagementV1ResetAccessKey: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "resetaccesskeys",
     subResource: "",
@@ -668,7 +668,7 @@ export const GenResources: TGenResources = {
     kind: "ResetAccessKey",
   },
   ManagementV1Self: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "selves",
     subResource: "",
@@ -676,7 +676,7 @@ export const GenResources: TGenResources = {
     kind: "Self",
   },
   ManagementV1SelfSubjectAccessReview: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "selfsubjectaccessreviews",
     subResource: "",
@@ -684,7 +684,7 @@ export const GenResources: TGenResources = {
     kind: "SelfSubjectAccessReview",
   },
   ManagementV1SharedSecret: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "sharedsecrets",
     subResource: "",
@@ -692,7 +692,7 @@ export const GenResources: TGenResources = {
     kind: "SharedSecret",
   },
   ManagementV1SpaceInstance: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "spaceinstances",
     subResource: "",
@@ -700,7 +700,7 @@ export const GenResources: TGenResources = {
     kind: "SpaceInstance",
   },
   ManagementV1SpaceTemplate: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "spacetemplates",
     subResource: "",
@@ -708,7 +708,7 @@ export const GenResources: TGenResources = {
     kind: "SpaceTemplate",
   },
   ManagementV1SubjectAccessReview: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "subjectaccessreviews",
     subResource: "",
@@ -716,7 +716,7 @@ export const GenResources: TGenResources = {
     kind: "SubjectAccessReview",
   },
   ManagementV1Task: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "tasks",
     subResource: "",
@@ -724,7 +724,7 @@ export const GenResources: TGenResources = {
     kind: "Task",
   },
   ManagementV1TaskLog: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "tasks",
     subResource: "log",
@@ -732,7 +732,7 @@ export const GenResources: TGenResources = {
     kind: "TaskLog",
   },
   ManagementV1Team: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "teams",
     subResource: "",
@@ -740,7 +740,7 @@ export const GenResources: TGenResources = {
     kind: "Team",
   },
   ManagementV1TeamAccessKeys: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "teams",
     subResource: "accesskeys",
@@ -748,7 +748,7 @@ export const GenResources: TGenResources = {
     kind: "TeamAccessKeys",
   },
   ManagementV1TeamClusters: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "teams",
     subResource: "clusters",
@@ -756,7 +756,7 @@ export const GenResources: TGenResources = {
     kind: "TeamClusters",
   },
   ManagementV1TeamObjectPermissions: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "teams",
     subResource: "object-permissions",
@@ -764,7 +764,7 @@ export const GenResources: TGenResources = {
     kind: "TeamObjectPermissions",
   },
   ManagementV1TeamPermissions: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "teams",
     subResource: "permissions",
@@ -772,7 +772,7 @@ export const GenResources: TGenResources = {
     kind: "TeamPermissions",
   },
   ManagementV1TranslateVClusterResourceName: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "translatevclusterresourcenames",
     subResource: "",
@@ -780,7 +780,7 @@ export const GenResources: TGenResources = {
     kind: "TranslateVClusterResourceName",
   },
   ManagementV1UsageDownload: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "usagedownload",
     subResource: "",
@@ -788,7 +788,7 @@ export const GenResources: TGenResources = {
     kind: "UsageDownload",
   },
   ManagementV1User: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "users",
     subResource: "",
@@ -796,7 +796,7 @@ export const GenResources: TGenResources = {
     kind: "User",
   },
   ManagementV1UserAccessKeys: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "users",
     subResource: "accesskeys",
@@ -804,7 +804,7 @@ export const GenResources: TGenResources = {
     kind: "UserAccessKeys",
   },
   ManagementV1UserClusters: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "users",
     subResource: "clusters",
@@ -812,7 +812,7 @@ export const GenResources: TGenResources = {
     kind: "UserClusters",
   },
   ManagementV1UserObjectPermissions: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "users",
     subResource: "object-permissions",
@@ -820,7 +820,7 @@ export const GenResources: TGenResources = {
     kind: "UserObjectPermissions",
   },
   ManagementV1UserPermissions: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "users",
     subResource: "permissions",
@@ -828,7 +828,7 @@ export const GenResources: TGenResources = {
     kind: "UserPermissions",
   },
   ManagementV1UserProfile: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "users",
     subResource: "profile",
@@ -836,7 +836,7 @@ export const GenResources: TGenResources = {
     kind: "UserProfile",
   },
   ManagementV1VirtualClusterAccessKey: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclusterinstances",
     subResource: "accesskey",
@@ -844,7 +844,7 @@ export const GenResources: TGenResources = {
     kind: "VirtualClusterAccessKey",
   },
   ManagementV1VirtualClusterExternalDatabase: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclusterinstances",
     subResource: "externaldatabase",
@@ -852,7 +852,7 @@ export const GenResources: TGenResources = {
     kind: "VirtualClusterExternalDatabase",
   },
   ManagementV1VirtualClusterInstance: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclusterinstances",
     subResource: "",
@@ -860,7 +860,7 @@ export const GenResources: TGenResources = {
     kind: "VirtualClusterInstance",
   },
   ManagementV1VirtualClusterInstanceKubeConfig: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclusterinstances",
     subResource: "kubeconfig",
@@ -868,7 +868,7 @@ export const GenResources: TGenResources = {
     kind: "VirtualClusterInstanceKubeConfig",
   },
   ManagementV1VirtualClusterInstanceLog: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclusterinstances",
     subResource: "log",
@@ -876,7 +876,7 @@ export const GenResources: TGenResources = {
     kind: "VirtualClusterInstanceLog",
   },
   ManagementV1VirtualClusterInstanceSnapshot: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclusterinstances",
     subResource: "snapshot",
@@ -884,7 +884,7 @@ export const GenResources: TGenResources = {
     kind: "VirtualClusterInstanceSnapshot",
   },
   ManagementV1VirtualClusterNodeAccessKey: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclusterinstances",
     subResource: "nodeaccesskey",
@@ -892,7 +892,7 @@ export const GenResources: TGenResources = {
     kind: "VirtualClusterNodeAccessKey",
   },
   ManagementV1VirtualClusterSchema: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclusterschemas",
     subResource: "",
@@ -900,7 +900,7 @@ export const GenResources: TGenResources = {
     kind: "VirtualClusterSchema",
   },
   ManagementV1VirtualClusterStandalone: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclusterinstances",
     subResource: "standalone",
@@ -908,7 +908,7 @@ export const GenResources: TGenResources = {
     kind: "VirtualClusterStandalone",
   },
   ManagementV1VirtualClusterTemplate: {
-    group: "management.loft.sh",
+    group: "management.devsy.sh",
     version: "v1",
     resource: "virtualclustertemplates",
     subResource: "",

@@ -35,7 +35,7 @@ export class ClusterV1SleepModeConfigStatus {
     */
     'sleepType'?: string;
     /**
-    * SleepingSince specifies since when the space is sleeping (if this is not specified, loft assumes the space is not sleeping)
+    * SleepingSince specifies since when the space is sleeping (if this is not specified, devsy assumes the space is not sleeping)
     */
     'sleepingSince'?: number;
     /**

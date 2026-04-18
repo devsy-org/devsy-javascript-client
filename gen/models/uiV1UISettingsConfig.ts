@@ -29,19 +29,19 @@ export class UiV1UISettingsConfig {
     'customJavaScript'?: Array<string>;
     'externalURLs'?: UiV1ExternalURLs;
     /**
-    * LegalTemplate is a text (html) string containing the legal template to prompt to users when authenticating to Loft
+    * LegalTemplate is a text (html) string containing the legal template to prompt to users when authenticating to Devsy
     */
     'legalTemplate'?: string;
     /**
-    * LoftVersion holds the current loft version
+    * DevsyVersion holds the current devsy version
     */
-    'loftVersion'?: string;
+    'devsyVersion'?: string;
     /**
     * LogoBackgroundColor is the color value (ex: \"#12345\") to use as the background color for the logo
     */
     'logoBackgroundColor'?: string;
     /**
-    * LogoURL is url pointing to the logo to use in the Loft UI. This path must be accessible for clients accessing the Loft UI!
+    * LogoURL is url pointing to the logo to use in the Devsy UI. This path must be accessible for clients accessing the Devsy UI!
     */
     'logoURL'?: string;
     /**
@@ -57,7 +57,7 @@ export class UiV1UISettingsConfig {
     */
     'sidebarColor'?: string;
     /**
-    * SmallLogoURL is url pointing to the small logo to use in the Loft UI. This path must be accessible for clients accessing the Loft UI!
+    * SmallLogoURL is url pointing to the small logo to use in the Devsy UI. This path must be accessible for clients accessing the Devsy UI!
     */
     'smallLogoURL'?: string;
 
@@ -95,8 +95,8 @@ export class UiV1UISettingsConfig {
             "format": ""
         },
         {
-            "name": "loftVersion",
-            "baseName": "loftVersion",
+            "name": "devsyVersion",
+            "baseName": "devsyVersion",
             "type": "string",
             "format": ""
         },

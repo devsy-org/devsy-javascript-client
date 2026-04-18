@@ -14,11 +14,11 @@
 
 export class StorageV1PresetRef {
     /**
-    * Name is the name of DevPodWorkspacePreset
+    * Name is the name of DevsyWorkspacePreset
     */
     'name': string;
     /**
-    * Version holds the preset version to use. Version is expected to be in semantic versioning format. Alternatively, you can also exchange major, minor or patch with an \'x\' to tell Loft to automatically select the latest major, minor or patch version.
+    * Version holds the preset version to use. Version is expected to be in semantic versioning format. Alternatively, you can also exchange major, minor or patch with an \'x\' to tell Devsy to automatically select the latest major, minor or patch version.
     */
     'version'?: string;
 

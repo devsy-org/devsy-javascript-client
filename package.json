@@ -1,6 +1,6 @@
 {
-  "name": "@loft-enterprise/client",
-  "version": "0.1.0",
+  "name": "@devsy/client",
+  "version": "4.4.1",
   "private": true,
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,7 +9,7 @@
     "build": "node bin/build.js",
     "postbuild": "yarn dts-bundle-generator -o lib/index.d.ts ./index.ts --external-imports=@kubernetes/client-node --project tsconfig.build.json --no-check --no-banner"
   },
-  "description": "loft-enterprise js client",
+  "description": "devsy js client",
   "dependencies": {
     "@kubernetes/client-node": "1.2.0",
     "js-cookie": "3.0.1",

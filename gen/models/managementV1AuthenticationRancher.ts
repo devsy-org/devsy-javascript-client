@@ -22,7 +22,7 @@ export class ManagementV1AuthenticationRancher {
     */
     'host'?: string;
     /**
-    * Insecure tells Loft if the Rancher endpoint is insecure.
+    * Insecure tells Devsy if the Rancher endpoint is insecure.
     */
     'insecure'?: boolean;
 

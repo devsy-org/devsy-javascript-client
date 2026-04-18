@@ -16,7 +16,7 @@ import { V1ObjectMeta } from '../models/V1ObjectMeta';
 
 
 /**
-* Config holds the loft configuration
+* Config holds the devsy configuration
 */
 export class ManagementV1Config {
     /**

@@ -15,7 +15,7 @@ import { StorageV1AllowedCluster } from '../models/storageV1AllowedCluster';
 import { StorageV1AllowedRunner } from '../models/storageV1AllowedRunner';
 import { StorageV1AllowedTemplate } from '../models/storageV1AllowedTemplate';
 import { StorageV1ArgoIntegrationSpec } from '../models/storageV1ArgoIntegrationSpec';
-import { StorageV1DevPodProjectSpec } from '../models/storageV1DevPodProjectSpec';
+import { StorageV1DevsyProjectSpec } from '../models/storageV1DevsyProjectSpec';
 import { StorageV1Member } from '../models/storageV1Member';
 import { StorageV1NamespacePattern } from '../models/storageV1NamespacePattern';
 import { StorageV1Quotas } from '../models/storageV1Quotas';
@@ -39,7 +39,7 @@ export class ManagementV1ProjectSpec {
     */
     'allowedClusters'?: Array<StorageV1AllowedCluster>;
     /**
-    * AllowedRunners are target runners that are allowed to target with DevPod environments.
+    * AllowedRunners are target runners that are allowed to target with Devsy environments.
     */
     'allowedRunners'?: Array<StorageV1AllowedRunner>;
     /**
@@ -51,7 +51,7 @@ export class ManagementV1ProjectSpec {
     * Description describes an app
     */
     'description'?: string;
-    'devPod'?: StorageV1DevPodProjectSpec;
+    'devsy'?: StorageV1DevsyProjectSpec;
     /**
     * DisplayName is the name that should be displayed in the UI
     */
@@ -108,9 +108,9 @@ export class ManagementV1ProjectSpec {
             "format": ""
         },
         {
-            "name": "devPod",
-            "baseName": "devPod",
-            "type": "StorageV1DevPodProjectSpec",
+            "name": "devsy",
+            "baseName": "devsy",
+            "type": "StorageV1DevsyProjectSpec",
             "format": ""
         },
         {

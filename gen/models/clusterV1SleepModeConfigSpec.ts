@@ -22,7 +22,7 @@ export class ClusterV1SleepModeConfigSpec {
     */
     'forceSleep'?: boolean;
     /**
-    * If force sleep duration is set, this will force the space to sleep for the given duration. It also implies that forceSleep is true. During this period loft will also block certain requests to that space. If this is set to 0, it means the space will sleep until it is manually woken up via the cli or ui.
+    * If force sleep duration is set, this will force the space to sleep for the given duration. It also implies that forceSleep is true. During this period devsy will also block certain requests to that space. If this is set to 0, it means the space will sleep until it is manually woken up via the cli or ui.
     */
     'forceSleepDuration'?: number;
     /**

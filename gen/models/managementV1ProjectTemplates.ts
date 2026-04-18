@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { ManagementV1DevPodEnvironmentTemplate } from '../models/managementV1DevPodEnvironmentTemplate';
-import { ManagementV1DevPodWorkspacePreset } from '../models/managementV1DevPodWorkspacePreset';
-import { ManagementV1DevPodWorkspaceTemplate } from '../models/managementV1DevPodWorkspaceTemplate';
+import { ManagementV1DevsyEnvironmentTemplate } from '../models/managementV1DevsyEnvironmentTemplate';
+import { ManagementV1DevsyWorkspacePreset } from '../models/managementV1DevsyWorkspacePreset';
+import { ManagementV1DevsyWorkspaceTemplate } from '../models/managementV1DevsyWorkspaceTemplate';
 import { ManagementV1SpaceTemplate } from '../models/managementV1SpaceTemplate';
 import { ManagementV1VirtualClusterTemplate } from '../models/managementV1VirtualClusterTemplate';
 import { V1ObjectMeta } from '../models/V1ObjectMeta';
@@ -24,13 +24,13 @@ export class ManagementV1ProjectTemplates {
     */
     'apiVersion'?: string;
     /**
-    * DefaultDevPodEnvironmentTemplate
+    * DefaultDevsyEnvironmentTemplate
     */
-    'defaultDevPodEnvironmentTemplate'?: string;
+    'defaultDevsyEnvironmentTemplate'?: string;
     /**
-    * DefaultDevPodWorkspaceTemplate
+    * DefaultDevsyWorkspaceTemplate
     */
-    'defaultDevPodWorkspaceTemplate'?: string;
+    'defaultDevsyWorkspaceTemplate'?: string;
     /**
     * DefaultSpaceTemplate
     */
@@ -40,17 +40,17 @@ export class ManagementV1ProjectTemplates {
     */
     'defaultVirtualClusterTemplate'?: string;
     /**
-    * DevPodEnvironmentTemplates holds all the allowed environment templates
+    * DevsyEnvironmentTemplates holds all the allowed environment templates
     */
-    'devPodEnvironmentTemplates'?: Array<ManagementV1DevPodEnvironmentTemplate>;
+    'devsyEnvironmentTemplates'?: Array<ManagementV1DevsyEnvironmentTemplate>;
     /**
-    * DevPodWorkspacePresets holds all the allowed workspace presets
+    * DevsyWorkspacePresets holds all the allowed workspace presets
     */
-    'devPodWorkspacePresets'?: Array<ManagementV1DevPodWorkspacePreset>;
+    'devsyWorkspacePresets'?: Array<ManagementV1DevsyWorkspacePreset>;
     /**
-    * DevPodWorkspaceTemplates holds all the allowed space templates
+    * DevsyWorkspaceTemplates holds all the allowed space templates
     */
-    'devPodWorkspaceTemplates'?: Array<ManagementV1DevPodWorkspaceTemplate>;
+    'devsyWorkspaceTemplates'?: Array<ManagementV1DevsyWorkspaceTemplate>;
     /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
@@ -75,14 +75,14 @@ export class ManagementV1ProjectTemplates {
             "format": ""
         },
         {
-            "name": "defaultDevPodEnvironmentTemplate",
-            "baseName": "defaultDevPodEnvironmentTemplate",
+            "name": "defaultDevsyEnvironmentTemplate",
+            "baseName": "defaultDevsyEnvironmentTemplate",
             "type": "string",
             "format": ""
         },
         {
-            "name": "defaultDevPodWorkspaceTemplate",
-            "baseName": "defaultDevPodWorkspaceTemplate",
+            "name": "defaultDevsyWorkspaceTemplate",
+            "baseName": "defaultDevsyWorkspaceTemplate",
             "type": "string",
             "format": ""
         },
@@ -99,21 +99,21 @@ export class ManagementV1ProjectTemplates {
             "format": ""
         },
         {
-            "name": "devPodEnvironmentTemplates",
-            "baseName": "devPodEnvironmentTemplates",
-            "type": "Array<ManagementV1DevPodEnvironmentTemplate>",
+            "name": "devsyEnvironmentTemplates",
+            "baseName": "devsyEnvironmentTemplates",
+            "type": "Array<ManagementV1DevsyEnvironmentTemplate>",
             "format": ""
         },
         {
-            "name": "devPodWorkspacePresets",
-            "baseName": "devPodWorkspacePresets",
-            "type": "Array<ManagementV1DevPodWorkspacePreset>",
+            "name": "devsyWorkspacePresets",
+            "baseName": "devsyWorkspacePresets",
+            "type": "Array<ManagementV1DevsyWorkspacePreset>",
             "format": ""
         },
         {
-            "name": "devPodWorkspaceTemplates",
-            "baseName": "devPodWorkspaceTemplates",
-            "type": "Array<ManagementV1DevPodWorkspaceTemplate>",
+            "name": "devsyWorkspaceTemplates",
+            "baseName": "devsyWorkspaceTemplates",
+            "type": "Array<ManagementV1DevsyWorkspaceTemplate>",
             "format": ""
         },
         {

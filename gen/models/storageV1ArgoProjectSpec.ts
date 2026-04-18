@@ -16,12 +16,12 @@ import { StorageV1ArgoProjectSpecMetadata } from '../models/storageV1ArgoProject
 
 export class StorageV1ArgoProjectSpec {
     /**
-    * Enabled indicates if the ArgoCD Project Integration is enabled for this project. Enabling this will cause Loft to create an appProject in ArgoCD that is associated with the Loft Project. When Project integration is enabled Loft will override the default assigned role set in the SSO integration spec.
+    * Enabled indicates if the ArgoCD Project Integration is enabled for this project. Enabling this will cause Devsy to create an appProject in ArgoCD that is associated with the Devsy Project. When Project integration is enabled Devsy will override the default assigned role set in the SSO integration spec.
     */
     'enabled'?: boolean;
     'metadata'?: StorageV1ArgoProjectSpecMetadata;
     /**
-    * Roles is a list of roles that should be attached to the ArgoCD project. If roles are provided no loft default roles will be set. If no roles are provided *and* SSO is enabled, loft will configure sane default values.
+    * Roles is a list of roles that should be attached to the ArgoCD project. If roles are provided no devsy default roles will be set. If no roles are provided *and* SSO is enabled, devsy will configure sane default values.
     */
     'roles'?: Array<StorageV1ArgoProjectRole>;
     /**

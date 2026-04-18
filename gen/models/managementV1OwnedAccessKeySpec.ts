@@ -66,7 +66,7 @@ export class ManagementV1OwnedAccessKeySpec {
     */
     'ttlAfterLastActivity'?: boolean;
     /**
-    * The type of an access key, which basically describes if the access key is user managed or managed by loft itself.
+    * The type of an access key, which basically describes if the access key is user managed or managed by devsy itself.
     */
     'type'?: string;
     /**

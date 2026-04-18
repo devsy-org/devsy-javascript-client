@@ -22,7 +22,7 @@ export class ManagementV1AuthenticationMicrosoft {
     */
     'clientSecret': string;
     /**
-    * It is possible to require a user to be a member of a particular group in order to be successfully authenticated in loft.
+    * It is possible to require a user to be a member of a particular group in order to be successfully authenticated in devsy.
     */
     'groups'?: Array<string>;
     /**
@@ -30,11 +30,11 @@ export class ManagementV1AuthenticationMicrosoft {
     */
     'onlySecurityGroups'?: boolean;
     /**
-    * loft redirect uri. Usually https://loft.my.domain/auth/microsoft/callback
+    * devsy redirect uri. Usually https://devsy.my.domain/auth/microsoft/callback
     */
     'redirectURI': string;
     /**
-    * tenant configuration parameter controls what kinds of accounts may be authenticated in loft. By default, all types of Microsoft accounts (consumers and organizations) can authenticate in loft via Microsoft. To change this, set the tenant parameter to one of the following:  common - both personal and business/school accounts can authenticate in loft via Microsoft (default) consumers - only personal accounts can authenticate in loft organizations - only business/school accounts can authenticate in loft tenant uuid or tenant name - only accounts belonging to specific tenant identified by either tenant uuid or tenant name can authenticate in loft
+    * tenant configuration parameter controls what kinds of accounts may be authenticated in devsy. By default, all types of Microsoft accounts (consumers and organizations) can authenticate in devsy via Microsoft. To change this, set the tenant parameter to one of the following:  common - both personal and business/school accounts can authenticate in devsy via Microsoft (default) consumers - only personal accounts can authenticate in devsy organizations - only business/school accounts can authenticate in devsy tenant uuid or tenant name - only accounts belonging to specific tenant identified by either tenant uuid or tenant name can authenticate in devsy
     */
     'tenant'?: string;
     /**

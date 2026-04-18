@@ -215,21 +215,21 @@ export interface Unstructured {
   [key: string]: any
 }
 
-export const LoftSchemeGroupVirtualCluster = "virtualcluster.loft.sh"
-export const LoftSchemeVersionVirtualCluster = "v1"
-export const LoftSchemeGroupVersionVirtualCluster = "virtualcluster.loft.sh/v1"
+export const DevsySchemeGroupVirtualCluster = "virtualcluster.devsy.sh"
+export const DevsySchemeVersionVirtualCluster = "v1"
+export const DevsySchemeGroupVersionVirtualCluster = "virtualcluster.devsy.sh/v1"
 
-export const LoftSchemeGroupCluster = "cluster.loft.sh"
-export const LoftSchemeVersionCluster = "v1"
-export const LoftSchemeGroupVersionCluster = "cluster.loft.sh/v1"
+export const DevsySchemeGroupCluster = "cluster.devsy.sh"
+export const DevsySchemeVersionCluster = "v1"
+export const DevsySchemeGroupVersionCluster = "cluster.devsy.sh/v1"
 
-export const LoftSchemeGroup = "management.loft.sh"
-export const LoftSchemeVersion = "v1"
-export const LoftSchemeGroupVersion = "management.loft.sh/v1"
+export const DevsySchemeGroup = "management.devsy.sh"
+export const DevsySchemeVersion = "v1"
+export const DevsySchemeGroupVersion = "management.devsy.sh/v1"
 
-export const LoftSchemeGroupStorage = "storage.loft.sh"
-export const LoftSchemeVersionStorage = "v1"
-export const LoftSchemeGroupVersionStorage = "storage.loft.sh/v1"
+export const DevsySchemeGroupStorage = "storage.devsy.sh"
+export const DevsySchemeVersionStorage = "v1"
+export const DevsySchemeGroupVersionStorage = "storage.devsy.sh/v1"
 
 export const APIExtensionsGroup = "apiextensions.k8s.io"
 export const APIExtensionsVersion = "v1"
@@ -300,7 +300,7 @@ export interface RequestOptionsProject {
   project: string
   space?: string
   virtualCluster?: string
-  devPodWorkspace?: string
+  devsyWorkspace?: string
 }
 
 export interface RequestOptionsVCluster {

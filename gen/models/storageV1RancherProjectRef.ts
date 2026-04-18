@@ -14,7 +14,7 @@
 
 export class StorageV1RancherProjectRef {
     /**
-    * Cluster defines the Rancher cluster ID Needs to be the same id within Loft
+    * Cluster defines the Rancher cluster ID Needs to be the same id within Devsy
     */
     'cluster'?: string;
     /**

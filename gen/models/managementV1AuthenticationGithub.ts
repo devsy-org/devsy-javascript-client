@@ -27,11 +27,11 @@ export class ManagementV1AuthenticationGithub {
     */
     'hostName'?: string;
     /**
-    * Loft queries the following organizations for group information. Group claims are formatted as \"(org):(team)\". For example if a user is part of the \"engineering\" team of the \"coreos\" org, the group claim would include \"coreos:engineering\".  If orgs are specified in the config then user MUST be a member of at least one of the specified orgs to authenticate with loft.
+    * Devsy queries the following organizations for group information. Group claims are formatted as \"(org):(team)\". For example if a user is part of the \"engineering\" team of the \"coreos\" org, the group claim would include \"coreos:engineering\".  If orgs are specified in the config then user MUST be a member of at least one of the specified orgs to authenticate with devsy.
     */
     'orgs'?: Array<ManagementV1AuthenticationGithubOrg>;
     /**
-    * RedirectURI holds the redirect URI. Should be https://loft.domain.tld/auth/github/callback
+    * RedirectURI holds the redirect URI. Should be https://devsy.domain.tld/auth/github/callback
     */
     'redirectURI': string;
     /**

@@ -43,7 +43,7 @@ export class StorageV1AppVersion {
     */
     'version'?: string;
     /**
-    * Wait determines if Loft should wait during deploy for the app to become ready
+    * Wait determines if Devsy should wait during deploy for the app to become ready
     */
     'wait'?: boolean;
 

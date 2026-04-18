@@ -26,11 +26,11 @@ export class ManagementV1ClusterAccessKey {
     */
     'apiVersion'?: string;
     /**
-    * CaCert is an optional ca cert to use for the loft host connection
+    * CaCert is an optional ca cert to use for the devsy host connection
     */
     'caCert'?: string;
     /**
-    * Insecure signals if the loft host is insecure
+    * Insecure signals if the devsy host is insecure
     */
     'insecure'?: boolean;
     /**
@@ -38,9 +38,9 @@ export class ManagementV1ClusterAccessKey {
     */
     'kind'?: string;
     /**
-    * LoftHost is the loft host used by the agent
+    * DevsyHost is the devsy host used by the agent
     */
-    'loftHost'?: string;
+    'devsyHost'?: string;
     'metadata'?: V1ObjectMeta;
 
     static readonly discriminator: string | undefined = undefined;
@@ -77,8 +77,8 @@ export class ManagementV1ClusterAccessKey {
             "format": ""
         },
         {
-            "name": "loftHost",
-            "baseName": "loftHost",
+            "name": "devsyHost",
+            "baseName": "devsyHost",
             "type": "string",
             "format": ""
         },

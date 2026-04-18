@@ -16,7 +16,7 @@ import { StorageV1ArgoSSOSpec } from '../models/storageV1ArgoSSOSpec';
 
 export class StorageV1ArgoIntegrationSpec {
     /**
-    * Cluster defines the name of the cluster that ArgoCD is deployed into -- if not provided this will default to \'loft-cluster\'.
+    * Cluster defines the name of the cluster that ArgoCD is deployed into -- if not provided this will default to \'devsy-cluster\'.
     */
     'cluster'?: string;
     /**
@@ -30,7 +30,7 @@ export class StorageV1ArgoIntegrationSpec {
     'project'?: StorageV1ArgoProjectSpec;
     'sso'?: StorageV1ArgoSSOSpec;
     /**
-    * VirtualClusterInstance defines the name of *virtual cluster* (instance) that ArgoCD is deployed into. If provided, Cluster will be ignored and Loft will assume that ArgoCD is running in the specified virtual cluster.
+    * VirtualClusterInstance defines the name of *virtual cluster* (instance) that ArgoCD is deployed into. If provided, Cluster will be ignored and Devsy will assume that ArgoCD is running in the specified virtual cluster.
     */
     'virtualClusterInstance'?: string;
 

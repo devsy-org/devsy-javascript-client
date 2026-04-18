@@ -14,11 +14,11 @@
 
 export class StorageV1UserOrTeam {
     /**
-    * Team specifies a Loft team.
+    * Team specifies a Devsy team.
     */
     'team'?: string;
     /**
-    * User specifies a Loft user.
+    * User specifies a Devsy user.
     */
     'user'?: string;
 

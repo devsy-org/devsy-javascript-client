@@ -14,7 +14,7 @@ import { LicenseApiRequest } from '../models/licenseApiRequest';
 
 
 /**
-* Analytics is a struct that represents the analytics server and the requests that should be sent to it. This information is sent to Loft instances when they check in with the license server.
+* Analytics is a struct that represents the analytics server and the requests that should be sent to it. This information is sent to Devsy instances when they check in with the license server.
 */
 export class LicenseApiAnalytics {
     /**

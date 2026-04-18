@@ -47,7 +47,7 @@ export class ManagementV1TeamSpec {
     */
     'username'?: string;
     /**
-    * The loft users that belong to a team
+    * The devsy users that belong to a team
     */
     'users'?: Array<string>;
 

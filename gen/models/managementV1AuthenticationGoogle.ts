@@ -34,7 +34,7 @@ export class ManagementV1AuthenticationGoogle {
     */
     'hostedDomains'?: Array<string>;
     /**
-    * loft redirect uri. E.g. https://loft.my.domain/auth/google/callback
+    * devsy redirect uri. E.g. https://devsy.my.domain/auth/google/callback
     */
     'redirectURI': string;
     /**

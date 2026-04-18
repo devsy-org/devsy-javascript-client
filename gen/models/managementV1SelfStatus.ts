@@ -34,13 +34,13 @@ export class ManagementV1SelfStatus {
     */
     'groups'?: Array<string>;
     /**
-    * InstanceID is the loft instance id
+    * InstanceID is the devsy instance id
     */
     'instanceID'?: string;
     /**
-    * LoftHost is the host of the loft instance
+    * DevsyHost is the host of the devsy instance
     */
-    'loftHost'?: string;
+    'devsyHost'?: string;
     /**
     * ProjectNamespacePrefix is the prefix used to name project namespaces after defaulting has been applied
     */
@@ -96,8 +96,8 @@ export class ManagementV1SelfStatus {
             "format": ""
         },
         {
-            "name": "loftHost",
-            "baseName": "loftHost",
+            "name": "devsyHost",
+            "baseName": "devsyHost",
             "type": "string",
             "format": ""
         },

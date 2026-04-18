@@ -20,9 +20,9 @@ import { StorageV1AccessKeyScopeVirtualCluster } from '../models/storageV1Access
 
 export class StorageV1AccessKeyScope {
     /**
-    * AllowLoftCLI allows certain read-only management requests to make sure loft cli works correctly with this specific access key.  Deprecated: Use the `roles` field instead  ```yaml  # Example:  roles:    - role: loftCLI  ```
+    * AllowDevsyCLI allows certain read-only management requests to make sure devsy cli works correctly with this specific access key.  Deprecated: Use the `roles` field instead  ```yaml  # Example:  roles:    - role: devsyCLI  ```
     */
-    'allowLoftCli'?: boolean;
+    'allowDevsyCli'?: boolean;
     /**
     * Clusters specifies the project cluster the access key is allowed to access.
     */
@@ -52,8 +52,8 @@ export class StorageV1AccessKeyScope {
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "allowLoftCli",
-            "baseName": "allowLoftCli",
+            "name": "allowDevsyCli",
+            "baseName": "allowDevsyCli",
             "type": "boolean",
             "format": ""
         },

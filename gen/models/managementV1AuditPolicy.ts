@@ -14,7 +14,7 @@ import { ManagementV1AuditPolicyRule } from '../models/managementV1AuditPolicyRu
 
 
 /**
-* AuditPolicy describes the audit policy to use for loft
+* AuditPolicy describes the audit policy to use for devsy
 */
 export class ManagementV1AuditPolicy {
     /**

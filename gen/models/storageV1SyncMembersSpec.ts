@@ -14,11 +14,11 @@
 
 export class StorageV1SyncMembersSpec {
     /**
-    * Enabled indicates whether to sync rancher project members to the loft project.
+    * Enabled indicates whether to sync rancher project members to the devsy project.
     */
     'enabled'?: boolean;
     /**
-    * RoleMapping indicates an optional role mapping from a rancher role to a loft role. Map to an empty role to exclude users and groups with that role from being synced.
+    * RoleMapping indicates an optional role mapping from a rancher role to a devsy role. Map to an empty role to exclude users and groups with that role from being synced.
     */
     'roleMapping'?: { [key: string]: string; };
 

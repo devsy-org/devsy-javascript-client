@@ -58,11 +58,11 @@ export class ManagementV1AuthenticationOIDC {
     */
     'issuerUrl'?: string;
     /**
-    * LoftUsernameClaim is the JWT field to use as the user\'s username.
+    * DevsyUsernameClaim is the JWT field to use as the user\'s username.
     */
-    'loftUsernameClaim'?: string;
+    'devsyUsernameClaim'?: string;
     /**
-    * Loft URI to be redirected to after successful logout by OIDC Provider
+    * Devsy URI to be redirected to after successful logout by OIDC Provider
     */
     'postLogoutRedirectURI'?: string;
     /**
@@ -70,7 +70,7 @@ export class ManagementV1AuthenticationOIDC {
     */
     'preferredUsername'?: string;
     /**
-    * loft redirect uri. E.g. https://loft.my.domain/auth/oidc/callback
+    * devsy redirect uri. E.g. https://devsy.my.domain/auth/oidc/callback
     */
     'redirectURI'?: string;
     /**
@@ -160,8 +160,8 @@ export class ManagementV1AuthenticationOIDC {
             "format": ""
         },
         {
-            "name": "loftUsernameClaim",
-            "baseName": "loftUsernameClaim",
+            "name": "devsyUsernameClaim",
+            "baseName": "devsyUsernameClaim",
             "type": "string",
             "format": ""
         },

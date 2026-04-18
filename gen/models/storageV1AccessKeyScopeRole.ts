@@ -18,7 +18,7 @@ export class StorageV1AccessKeyScopeRole {
     */
     'projects'?: Array<string>;
     /**
-    * Role is the name of the role to apply to the access key scope.  Possible enum values:  - `\"agent\"`  - `\"loft-cli\"`  - `\"network-peer\"`  - `\"runner\"`  - `\"vcluster\"`  - `\"workspace\"`
+    * Role is the name of the role to apply to the access key scope.  Possible enum values:  - `\"agent\"`  - `\"devsy-cli\"`  - `\"network-peer\"`  - `\"runner\"`  - `\"vcluster\"`  - `\"workspace\"`
     */
     'role'?: StorageV1AccessKeyScopeRoleRoleEnum;
     /**
@@ -59,7 +59,7 @@ export class StorageV1AccessKeyScopeRole {
 
 export enum StorageV1AccessKeyScopeRoleRoleEnum {
     Agent = 'agent',
-    LoftCli = 'loft-cli',
+    DevsyCli = 'devsy-cli',
     NetworkPeer = 'network-peer',
     Runner = 'runner',
     Vcluster = 'vcluster',
