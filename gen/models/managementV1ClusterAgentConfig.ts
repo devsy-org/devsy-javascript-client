@@ -46,11 +46,11 @@ export class ManagementV1ClusterAgentConfig {
     /**
     * LoftHost defines the host for the agent\'s loft instance
     */
-    'loftHost'?: string;
+    'devsyHost'?: string;
     /**
     * LoftInstanceID defines the instance id from the loft instance
     */
-    'loftInstanceID'?: string;
+    'devsyInstanceID'?: string;
     'metadata'?: V1ObjectMeta;
     /**
     * ProjectNamespacePrefix holds the prefix for loft project namespaces
@@ -113,14 +113,14 @@ export class ManagementV1ClusterAgentConfig {
             "format": ""
         },
         {
-            "name": "loftHost",
-            "baseName": "loftHost",
+            "name": "devsyHost",
+            "baseName": "devsyHost",
             "type": "string",
             "format": ""
         },
         {
-            "name": "loftInstanceID",
-            "baseName": "loftInstanceID",
+            "name": "devsyInstanceID",
+            "baseName": "devsyInstanceID",
             "type": "string",
             "format": ""
         },

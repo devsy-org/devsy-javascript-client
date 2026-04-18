@@ -14,7 +14,7 @@ import { LicenseApiButton } from '../models/licenseApiButton.js';
 
 
 /**
-* Announcement contains an announcement that should be shown within the Loft instance. This information is sent to Loft instances when they check in with the license server.
+* Announcement contains an announcement that should be shown within the Devsy instance. This information is sent to Devsy instances when they check in with the license server.
 */
 export class LicenseApiAnnouncement {
     /**

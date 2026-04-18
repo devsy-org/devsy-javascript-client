@@ -49,7 +49,7 @@ export class ManagementV1ConfigStatus {
     /**
     * LoftHost holds the domain where the loft instance is hosted. This should not include https or http. E.g. loft.my-domain.com
     */
-    'loftHost'?: string;
+    'devsyHost'?: string;
     'oidc'?: ManagementV1OIDC;
     'platformDB'?: ManagementV1PlatformDB;
     /**
@@ -123,8 +123,8 @@ export class ManagementV1ConfigStatus {
             "format": ""
         },
         {
-            "name": "loftHost",
-            "baseName": "loftHost",
+            "name": "devsyHost",
+            "baseName": "devsyHost",
             "type": "string",
             "format": ""
         },

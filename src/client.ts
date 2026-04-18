@@ -51,9 +51,9 @@ const CookieOptions: Cookies.CookieAttributes = {
   sameSite: "strict",
 }
 
-const LOFT_ACCESS_KEY_IDENTIFIER = constants.loftAccessKeyIdentifier
-const LOFT_IMPERSONATE_SUBJECT_IDENTIFIER = constants.loftImpersonateSubjectIdentifier
-const LOFT_IMPERSONATE_JOINED_GROUP_IDENTIFIER = constants.loftImpersonateJoinedGroupIdentifier
+const DEVSY_ACCESS_KEY_IDENTIFIER = constants.devsyAccessKeyIdentifier
+const DEVSY_IMPERSONATE_SUBJECT_IDENTIFIER = constants.devsyImpersonateSubjectIdentifier
+const DEVSY_IMPERSONATE_JOINED_GROUP_IDENTIFIER = constants.devsyImpersonateJoinedGroupIdentifier
 
 const K8S_WEBSOCKET_PROTOCOLS = [
   "v4.channel.k8s.io",
@@ -88,8 +88,8 @@ function getWebSocketHost(): string {
 function getProjectExtraGroups(project: RequestOptionsProject): string[] {
   return [
     project.virtualCluster
-      ? "loft:vcluster:main"
-      : `loft:space:${project.project}:${project.space}`,
+      ? "devsy:vcluster:main"
+      : `devsy:space:${project.project}:${project.space}`,
   ]
 }
 
@@ -141,7 +141,7 @@ export function getProjectFromNamespace(
 
 class Client {
   static getAccessKey(): string | null {
-    return localStorage.getItem(LOFT_ACCESS_KEY_IDENTIFIER)
+    return localStorage.getItem(DEVSY_ACCESS_KEY_IDENTIFIER)
   }
 
   static tryCastToStatus(obj: any): Result<V1Status | null> {
@@ -175,13 +175,13 @@ class Client {
     }
 
     if (typeof window !== "undefined") {
-      if (!(window as any).loft) {
-        ;(window as any).loft = {}
+      if (!(window as any).devsy) {
+        ;(window as any).devsy = {}
       }
 
-      ;(window as any).loft.instanceID = selfResult.val.status.instanceID
-      ;(window as any).loft.chatAuthToken = selfResult.val.status.chatAuthToken
-      ;(window as any).loft.user = selfResult.val.status.user
+      ;(window as any).devsy.instanceID = selfResult.val.status.instanceID
+      ;(window as any).devsy.chatAuthToken = selfResult.val.status.chatAuthToken
+      ;(window as any).devsy.user = selfResult.val.status.user
     }
 
     return Return.Value(selfResult.val.status.user.name!)
@@ -191,7 +191,7 @@ class Client {
     return this.accessKey
   }
 
-  public async loftVersion(refresh?: boolean): Promise<Result<VersionV1Version>> {
+  public async devsyVersion(refresh?: boolean): Promise<Result<VersionV1Version>> {
     try {
       let path = this.apiHost + "/version"
       if (refresh) {
@@ -211,7 +211,7 @@ class Client {
 
   public impersonatedUser(): { name: string; subject: string; groups: string[] } | undefined {
     try {
-      const impersonationHeaders = localStorage.getItem(LOFT_IMPERSONATE_SUBJECT_IDENTIFIER)
+      const impersonationHeaders = localStorage.getItem(DEVSY_IMPERSONATE_SUBJECT_IDENTIFIER)
       if (impersonationHeaders) {
         return JSON.parse(impersonationHeaders) as {
           name: string
@@ -229,15 +229,15 @@ class Client {
   public impersonate(name?: string, subject?: string, groups?: string[]) {
     if (!subject) {
       // Remove from local storage
-      localStorage.removeItem(LOFT_IMPERSONATE_SUBJECT_IDENTIFIER)
+      localStorage.removeItem(DEVSY_IMPERSONATE_SUBJECT_IDENTIFIER)
 
       // Remove from cookies
-      Cookies.remove(LOFT_IMPERSONATE_SUBJECT_IDENTIFIER)
-      Cookies.remove(LOFT_IMPERSONATE_JOINED_GROUP_IDENTIFIER)
+      Cookies.remove(DEVSY_IMPERSONATE_SUBJECT_IDENTIFIER)
+      Cookies.remove(DEVSY_IMPERSONATE_JOINED_GROUP_IDENTIFIER)
     } else {
       // Store in local storage
       localStorage.setItem(
-        LOFT_IMPERSONATE_SUBJECT_IDENTIFIER,
+        DEVSY_IMPERSONATE_SUBJECT_IDENTIFIER,
         JSON.stringify({
           name,
           subject,
@@ -247,15 +247,15 @@ class Client {
 
       // Store in cookies
       if (subject) {
-        Cookies.set(LOFT_IMPERSONATE_SUBJECT_IDENTIFIER, subject, CookieOptions)
+        Cookies.set(DEVSY_IMPERSONATE_SUBJECT_IDENTIFIER, subject, CookieOptions)
       }
       groups?.forEach((group) => {
-        let existingGroup = Cookies.get(LOFT_IMPERSONATE_JOINED_GROUP_IDENTIFIER)
+        let existingGroup = Cookies.get(DEVSY_IMPERSONATE_JOINED_GROUP_IDENTIFIER)
         if (existingGroup) {
           existingGroup += ", " + group
-          Cookies.set(LOFT_IMPERSONATE_JOINED_GROUP_IDENTIFIER, existingGroup, CookieOptions)
+          Cookies.set(DEVSY_IMPERSONATE_JOINED_GROUP_IDENTIFIER, existingGroup, CookieOptions)
         } else {
-          Cookies.set(LOFT_IMPERSONATE_JOINED_GROUP_IDENTIFIER, group, CookieOptions)
+          Cookies.set(DEVSY_IMPERSONATE_JOINED_GROUP_IDENTIFIER, group, CookieOptions)
         }
       })
     }
@@ -307,7 +307,7 @@ class Client {
   private setAccessKey(key: string) {
     this.accessKey = key
 
-    localStorage.setItem(LOFT_ACCESS_KEY_IDENTIFIER, key)
+    localStorage.setItem(DEVSY_ACCESS_KEY_IDENTIFIER, key)
   }
 
   public async stream(
@@ -424,7 +424,7 @@ class Client {
       if (response.status === 404) {
         return Return.Failed("page not found", "NotFound", ErrorTypeNotFound)
       } else if (response.status === 503) {
-        if (path.includes("kiosk.sh") || path.includes("cluster.loft.sh")) {
+        if (path.includes("kiosk.sh") || path.includes("cluster.devsy.sh")) {
           const splitted = path.split("/")
           if (
             splitted.length >= 4 &&
@@ -434,14 +434,14 @@ class Client {
           ) {
             return Return.Failed(
               "Agent seems to be currently unavailable, it is maybe just starting up. Click here for more information.",
-              "LoftAgentUnavailable",
+              "DevsyAgentUnavailable",
               ErrorTypeServiceUnavailable,
               {
                 displayMessage: {
                   textBeforeLink:
                     "Agent seems to be currently unavailable, it is maybe just starting up. Click ",
                   linkText: "here",
-                  linkHref: `/spaces/${splitted[3]}/loft`,
+                  linkHref: `/spaces/${splitted[3]}/devsy`,
                   textAfterLink: " for more information.",
                 },
               }
@@ -450,7 +450,7 @@ class Client {
 
           return Return.Failed(
             "Agent seems to be currently unavailable, it is maybe just starting up",
-            "LoftAgentUnavailable",
+            "DevsyAgentUnavailable",
             ErrorTypeServiceUnavailable
           )
         }
@@ -744,11 +744,11 @@ class Client {
   private clearStorage() {
     this.accessKey = null
 
-    localStorage.removeItem(LOFT_ACCESS_KEY_IDENTIFIER)
-    localStorage.removeItem(LOFT_IMPERSONATE_SUBJECT_IDENTIFIER)
+    localStorage.removeItem(DEVSY_ACCESS_KEY_IDENTIFIER)
+    localStorage.removeItem(DEVSY_IMPERSONATE_SUBJECT_IDENTIFIER)
 
-    Cookies.remove(LOFT_IMPERSONATE_SUBJECT_IDENTIFIER, { secure: true })
-    Cookies.remove(LOFT_IMPERSONATE_JOINED_GROUP_IDENTIFIER, { secure: true })
+    Cookies.remove(DEVSY_IMPERSONATE_SUBJECT_IDENTIFIER, { secure: true })
+    Cookies.remove(DEVSY_IMPERSONATE_JOINED_GROUP_IDENTIFIER, { secure: true })
   }
 
   public async logout(): Promise<ResultError> {
@@ -993,7 +993,7 @@ class Request<T> {
   ): Promise<Result<ReadableStreamDefaultReader<Uint8Array>>> {
     let requestPath = [
       this.options.basePath,
-      `apis/management.loft.sh/v1/namespaces/${namespace}/virtualclusterinstances/${instance}/log`,
+      `apis/management.devsy.sh/v1/namespaces/${namespace}/virtualclusterinstances/${instance}/log`,
     ].join("/")
     const parameters: string[] = []
     if (options) {
@@ -1012,7 +1012,7 @@ class Request<T> {
     task: string,
     options?: LogOptions
   ): Promise<Result<ReadableStreamDefaultReader<Uint8Array>>> {
-    let requestPath = [this.options.basePath, `apis/management.loft.sh/v1/tasks/${task}/log`].join(
+    let requestPath = [this.options.basePath, `apis/management.devsy.sh/v1/tasks/${task}/log`].join(
       "/"
     )
 

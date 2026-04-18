@@ -33,7 +33,7 @@ export class UiV1UISettingsConfig {
     */
     'faviconURL'?: string;
     /**
-    * LegalTemplate is a text (html) string containing the legal template to prompt to users when authenticating to Loft
+    * LegalTemplate is a text (html) string containing the legal template to prompt to users when authenticating to Devsy
     */
     'legalTemplate'?: string;
     /**

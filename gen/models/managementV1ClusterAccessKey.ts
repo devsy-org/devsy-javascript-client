@@ -40,7 +40,7 @@ export class ManagementV1ClusterAccessKey {
     /**
     * LoftHost is the loft host used by the agent
     */
-    'loftHost'?: string;
+    'devsyHost'?: string;
     'metadata'?: V1ObjectMeta;
 
     static readonly discriminator: string | undefined = undefined;
@@ -77,8 +77,8 @@ export class ManagementV1ClusterAccessKey {
             "format": ""
         },
         {
-            "name": "loftHost",
-            "baseName": "loftHost",
+            "name": "devsyHost",
+            "baseName": "devsyHost",
             "type": "string",
             "format": ""
         },

@@ -40,7 +40,7 @@ export class ManagementV1SelfStatus {
     /**
     * LoftHost is the host of the loft instance
     */
-    'loftHost'?: string;
+    'devsyHost'?: string;
     /**
     * ProjectNamespacePrefix is the prefix used to name project namespaces after defaulting has been applied
     */
@@ -96,8 +96,8 @@ export class ManagementV1SelfStatus {
             "format": ""
         },
         {
-            "name": "loftHost",
-            "baseName": "loftHost",
+            "name": "devsyHost",
+            "baseName": "devsyHost",
             "type": "string",
             "format": ""
         },

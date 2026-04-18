@@ -54,13 +54,13 @@ export class UiV1UISettingsSpec {
     */
     'hasHelmRelease'?: boolean;
     /**
-    * LegalTemplate is a text (html) string containing the legal template to prompt to users when authenticating to Loft
+    * LegalTemplate is a text (html) string containing the legal template to prompt to users when authenticating to Devsy
     */
     'legalTemplate'?: string;
     /**
     * LoftHosted indicates whether the vCluster Platform instance is hosted and operated by Loft Labs Inc.
     */
-    'loftHosted'?: boolean;
+    'devsyHosted'?: boolean;
     /**
     * LoftVersion holds the current loft version
     */
@@ -163,8 +163,8 @@ export class UiV1UISettingsSpec {
             "format": ""
         },
         {
-            "name": "loftHosted",
-            "baseName": "loftHosted",
+            "name": "devsyHosted",
+            "baseName": "devsyHosted",
             "type": "boolean",
             "format": ""
         },

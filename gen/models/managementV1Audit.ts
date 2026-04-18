@@ -30,7 +30,7 @@ export class ManagementV1Audit {
     */
     'dataStoreTTL'?: number;
     /**
-    * If true, the agent will not send back any audit logs to Loft itself.
+    * If true, the agent will not send back any audit logs to Devsy itself.
     */
     'disableAgentSyncBack'?: boolean;
     /**
